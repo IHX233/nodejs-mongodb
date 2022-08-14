@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>404 页面被嘎子偷走了</h1>
+    <h3><span style="color:red">8</span>秒后跳回首页</h3>
+</body>
+<script>
+    let span = document.querySelector('span')
+    let num = 8
+    setInterval(() => {
+        span.innerHTML = --num
+        if (num === 0) window.location.href = '/';
+    }, 1000)
+</script>
+
+</html>
